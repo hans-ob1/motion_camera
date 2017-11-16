@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>firstprogram</class>
+ <widget class="QMainWindow" name="firstprogram">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>865</width>
+    <height>633</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>865</width>
+    <height>633</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>865</width>
+    <height>633</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MotionCam</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="playback_tab">
+       <property name="inputMethodHints">
+        <set>Qt::ImhNone</set>
+       </property>
+       <attribute name="title">
+        <string>Playback</string>
+       </attribute>
+       <widget class="QPushButton" name="load_button">
+        <property name="geometry">
+         <rect>
+          <x>710</x>
+          <y>60</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Load Video</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="display_image">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>20</y>
+          <width>640</width>
+          <height>480</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>640</width>
+          <height>480</height>
+         </size>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">Background-color: #000;</string>
+        </property>
+        <property name="text">
+         <string>Image</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="play_pause_button">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>710</x>
+          <y>110</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Play</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="stop_button">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>710</x>
+          <y>160</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Stop</string>
+        </property>
+       </widget>
+       <widget class="QSlider" name="playbackslider">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>510</y>
+          <width>641</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_start_label">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>530</y>
+          <width>46</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>00:00:00</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_end_label">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>530</y>
+          <width>46</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>00:00:00</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Monitor</string>
+       </attribute>
+       <widget class="QLabel" name="display_record">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>640</width>
+          <height>480</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>640</width>
+          <height>480</height>
+         </size>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">Background-color: #000;</string>
+        </property>
+        <property name="text">
+         <string>Image</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="stop_record_button">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>520</y>
+          <width>111</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Record</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="geometry">
+         <rect>
+          <x>680</x>
+          <y>260</y>
+          <width>131</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Record On:</string>
+        </property>
+        <widget class="QCheckBox" name="movement_checkbox">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>121</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Detected Movement</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="everything_checkbox">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>111</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Everything</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="geometry">
+         <rect>
+          <x>680</x>
+          <y>40</y>
+          <width>120</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Status:</string>
+        </property>
+        <widget class="QLabel" name="camstatus_label">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>101</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>no camera detected</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="loadcam_button">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>100</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Load Camera</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="record_label">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>560</y>
+          <width>201</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
