@@ -21,5 +21,5 @@ Screenshot 4                |  Screenshot 5              |    Screenshot 6
 Installer is included and please refer to the QT documentation if you want to repackage it for distribution in the future. The technique used is background subtraction, followed by Baye's classifier to filter out the noise and to give a confidence value to determine if there is a presence of motion. There is a short video demo below to show how it works. The collected video is a series of short span in which motion were detected. The blur is intentional for privacy sake.  
 
 ## Video Demo:
-[![Video Demo](https://img.youtube.com/vi/93rKZjsv5dc/0.jpg)](https://https://www.youtube.com/watch?v=93rKZjsv5dc)
+[![Video Demo](https://img.youtube.com/vi/93rKZjsv5dc/0.jpg)](https://www.youtube.com/watch?v=93rKZjsv5dc)
 
