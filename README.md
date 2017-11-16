@@ -5,7 +5,12 @@ This package uses your idle web-cam as a video recording device. Video recording
 # Screenshots
 ---
 
+Screenshot 1                |  Screenshot 2              |    Screenshot 3 
+:-------------------------:|:-------------------------:|:-------------------------:
 ![](https://haixun00.github.io/img/project/motion_cam/pic1.jpg)  |  ![](https://haixun00.github.io/img/project/motion_cam/pic2.jpg) | ![](https://haixun00.github.io/img/project/motion_cam/pic3.jpg)
+
+Screenshot 4                |  Screenshot 5              |    Screenshot 6
+:-------------------------:|:-------------------------:|:-------------------------:
 ![](https://haixun00.github.io/img/project/motion_cam/pic4.jpg)  |  ![](https://haixun00.github.io/img/project/motion_cam/pic5.jpg) | ![](https://haixun00.github.io/img/project/motion_cam/pic6.jpg)
 
 # System Requirements:
